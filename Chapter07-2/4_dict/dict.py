@@ -168,11 +168,11 @@ print("        (5)값 출력:", sorted(sampleDic.values()))
 print("        (6)값의 리스트:", sorted(sampleDic.values()))
 
 print("\n    12-4. 딕셔너리를 이용한 집합 연산")
-A=sampleDic.keys()
-B={"홍길동","이성계","김판서"}
+A = sampleDic.keys()
+B = {"홍길동", "이성계", "김판서"}
 
-print("        A:",A)
-print("        B:",B)
+print("        A:", A)
+print("        B:", B)
 
-print("        A&B:",A&B)
-print("        A^B:",A^B)
+print("        A&B:", A & B)
+print("        A^B:", A ^ B)

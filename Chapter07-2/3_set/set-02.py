@@ -15,5 +15,5 @@ total = 0
 for i in sampleSet1:
     total += i
 
-print("    total = 0\n    for iin sampleSet1:")
+print("    total = 0\n    for i in sampleSet1:")
 print("       total += i\n    print(total) = %s" % total)

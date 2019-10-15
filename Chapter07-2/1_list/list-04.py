@@ -1,4 +1,4 @@
-sampleList = [4,3,9,1]
+sampleList = [4, 3, 9, 1]
 
 print("\n7. 샘플리스트에 또 다른 리스트를 붙이기(extend)")
 print("   sampleList= ", sampleList)
