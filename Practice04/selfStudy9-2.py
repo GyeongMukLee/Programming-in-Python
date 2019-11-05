@@ -15,11 +15,11 @@ def calc(v1, v2, op):
     return result
 
 
-def formatCheck(v1:int, v2: int, op: str) -> bool:
+def formatCheck(v2: int, op: str) -> bool:
     if op not in {"+", "-", "*", "/", "**"}:
         print("연산자가 잘못되었습니다.")
         return False
-    elif op == "/" and v2 == 0:
+    if op == "/" and v2 == 0:
         print("0으로 나눌 수 없습니다.")
         return False
     return True
@@ -35,7 +35,6 @@ var1 = int(input("첫 번째 수를 입력하세요 : "))
 operator = input("계산을 입력하세요(+, -, *, /, **) : ")
 var2 = int(input("두 번째 수를 입력하세요 : "))
 
-res = calc(var1, var2, operator)
-
 if formatCheck(var2, operator):
+    res = calc(var1, var2, operator)
     print("## 계산기 : %d %s %d = %d" % (var1, operator, var2, res))
