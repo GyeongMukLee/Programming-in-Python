@@ -14,8 +14,9 @@ def clickNext():
     num += 1
     if num > 8:
         num = 0
-    photo = tk.PhotoImage(file="GIF/" + fnameList[num])
+    photo = tk.PhotoImage(file="Chapter10/GIF/" + fnameList[num])
     pLabel.configure(image=photo)
+    btnFilename.configure(text=fnameList[num])
     pLabel.image = photo
 
 
@@ -24,12 +25,13 @@ def clickPrev():
     num -= 1
     if num < 0:
         num = 8
-    photo = tk.PhotoImage(file="GIF/" + fnameList[num])
+    photo = tk.PhotoImage(file="Chapter10/GIF/" + fnameList[num])
     pLabel.configure(image=photo)
+    btnFilename.configure(text=fnameList[num])
     pLabel.image = photo
 
 
-## 메인 코드 부분
+# 메인 코드 부분
 window = tk.Tk()
 window.geometry("700x500")
 window.title("사진 앨범 보기")
@@ -38,7 +40,7 @@ btnPrev = tk.Button(window, text="<< 이전", command=clickPrev)
 btnFilename = tk.Button(window, text=fnameList[num])
 btnNext = tk.Button(window, text="다음 >>", command=clickNext)
 
-photo = tk.PhotoImage(file="GIF/" + fnameList[0])
+photo = tk.PhotoImage(file="Chapter10/GIF/" + fnameList[0])
 pLabel = tk.Label(window, image=photo)
 
 btnPrev.place(x=250, y=10)
