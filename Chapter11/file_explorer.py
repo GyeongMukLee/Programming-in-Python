@@ -35,8 +35,8 @@ def fillListBox():  # 항상 제일 검색한 폴더 리스트의 마지막 폴�
 
 ## 전역 변수 선언 부분 ##
 window = None
-searchDirList = ['C:\\']  # 중요 변수! 검색한 폴더 목록의 스택
-currentDir = 'C:\\'
+searchDirList = ['C:\\Temp\\']  # 중요 변수! 검색한 폴더 목록의 스택
+currentDir = 'C:\\Temp\\'
 dirLabel, dirListBox, fileListBox = None, None, None
 ## 메인 코드 부분 ##
 if __name__ == "__main__":
