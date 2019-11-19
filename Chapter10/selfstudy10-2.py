@@ -4,7 +4,7 @@ import random as rand
 # 변수 선언
 fnameList = ["froyo.gif", "gingerbread.gif", "honeycomb.gif", "icecream.gif", "jellybean.gif", "kitkat.gif",
              "lollipop.gif", "marshmallow.gif", "nougat.gif"]
-btnList = [""] * 9
+btnList = [None] * 9
 photoList = [None] * 9
 
 i, k = 0, 0
@@ -17,7 +17,7 @@ window.geometry("210x210")
 rand.shuffle(fnameList)
 
 for i in range(0, 9):
-    photoList[i] = tk.PhotoImage(file="GIF/" + fnameList[i])
+    photoList[i] = tk.PhotoImage(file="Chapter10/GIF/" + fnameList[i])
     btnList[i] = tk.Button(window, image=photoList[i])
 
 for i in range(0, 3):
